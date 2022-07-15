@@ -1,0 +1,77 @@
+
+    .container {
+        padding-top: 30px;
+        margin: 0 auto; 
+        padding: 10px;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    header {
+        overflow: hidden;
+        margin-right: auto;    
+        margin-left: auto;    
+        max-width: 100%;    
+        min-width: 1000px;
+    }
+
+    .nav-name {
+        font-family: 'Open Sans';
+        font-size: 25px;
+        font-weight: 540;
+        float: left;
+        margin-left: 2rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Open Sans';
+    }
+
+    nav li {
+        float: right;
+    }
+
+    nav li a {
+        display: inline-block;
+        font-style: normal;
+        margin-right: 2rem;
+        font-size: 16px;
+        font-weight: 530;
+    }
+
+    .intro-text {
+        padding-top: 150px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 200px;
+    }
+
+    .text-portion1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 70px;
+        overflow: hidden;
+        max-height: 500px;
+        height: auto;
+        color:black;
+    }
+
+    .text-portion2 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 50px;
+        overflow: hidden;
+        max-height: 500px;
+        height: auto;
+    }
+    .linebreak1 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+
