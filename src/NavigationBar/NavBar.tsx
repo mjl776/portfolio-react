@@ -17,7 +17,7 @@ const NavBar = () => {
                 </nav>
             </header>
             <div className = "intro-text">
-                <div className = "text-portion1">Hi!</div>
+                <span className = "text-portion1">Hi!</span>
                 <div className = "text-portion2">I'm Michael, a</div>
                 <div className = "text-portion2">UX Designer</div>
                 <div className = "text-portion2">based in New York</div>
