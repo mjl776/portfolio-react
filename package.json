@@ -1,7 +1,7 @@
 {
-  "homepage": "https://mjl776.github.io/portfolio-react",
   "name": "portfolio-react",
   "version": "0.1.0",
+  "homepage": "https://mjl776.github.io/portfolio-react",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
