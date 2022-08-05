@@ -18,7 +18,6 @@
     }
 
     .nav-name {
-        font-family: 'Open Sans';
         font-size: 25px;
         font-weight: 540;
         float: left;
@@ -29,7 +28,6 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-family: 'Open Sans';
     }
 
     nav li {
@@ -46,7 +44,6 @@
 
     .intro-text {
         padding-top: 150px;
-        font-family: 'Open Sans';
         font-weight: 600;
         padding-bottom: 200px;
         min-width: 1000px;
