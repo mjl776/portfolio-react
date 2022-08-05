@@ -18,7 +18,7 @@
     }
 
     .nav-name {
-        font-size: 25px;
+        font-size: calc(20px + 0.390625vw);
         font-weight: 540;
         float: left;
         margin-left: 2rem;
@@ -28,6 +28,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        font-family: 'Open Sans';
     }
 
     nav li {
@@ -38,12 +39,13 @@
         display: inline-block;
         font-style: normal;
         margin-right: 2rem;
-        font-size: 16px;
+        font-size: calc(14px + 0.390625vw);
         font-weight: 530;
     }
 
     .intro-text {
         padding-top: 150px;
+        font-family: 'Open Sans';
         font-weight: 600;
         padding-bottom: 200px;
         min-width: 1000px;
@@ -53,13 +55,13 @@
     .text-portion1 {
         padding-left: 40%;
         padding-right: 20%;
-        font-size: 50px;
+        font-size: calc(50px + 0.390625vw);
     }
 
     .text-portion2 {
         padding-left: 40%;
         padding-right: 20%;
-        font-size: 40px;
+        font-size: calc(38px + 0.390625vw);
     }
 
 
