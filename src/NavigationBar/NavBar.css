@@ -9,16 +9,13 @@
         font-family: 'Open Sans';
     }
 
-    header {
-        overflow: hidden;
-        margin-right: auto;    
-        margin-left: auto;    
-        max-width: 100%;    
-        min-width: 1000px;
+    .name-tag {
+        text-decoration: none;
+        color: rgb(0, 0, 0);  
     }
 
     .nav-name {
-        font-size: calc(20px + 0.390625vw);
+        font-size: 30px;
         font-weight: 540;
         float: left;
         margin-left: 2rem;
@@ -29,6 +26,8 @@
         padding: 0;
         list-style: none;
         font-family: 'Open Sans';
+        max-width: 100%;    
+        min-width: 1000px;
     }
 
     nav li {
@@ -36,33 +35,20 @@
     }
 
     nav li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);        
         display: inline-block;
         font-style: normal;
         margin-right: 2rem;
-        font-size: calc(14px + 0.390625vw);
+        font-size: 20px;
         font-weight: 530;
     }
 
-    .intro-text {
-        padding-top: 150px;
-        font-family: 'Open Sans';
-        font-weight: 600;
-        padding-bottom: 200px;
-        min-width: 1000px;
-        max-width: 100%;    
+
+    @media screen and (max-width: 1000px){
+ 
+        .mobile-menu {
+            float: right;
+        }
+
     }
-    
-    .text-portion1 {
-        padding-left: 40%;
-        padding-right: 20%;
-        font-size: calc(50px + 0.390625vw);
-    }
-
-    .text-portion2 {
-        padding-left: 40%;
-        padding-right: 20%;
-        font-size: calc(38px + 0.390625vw);
-    }
-
-
-
