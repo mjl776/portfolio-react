@@ -32,7 +32,7 @@ const NavBar = () => {
     
                 {/* Desktop Screen */}
 
-                {(screenWidth > 1000) && (
+                {(screenWidth > 800) && (
                     <nav>
                         <ul>
                             <li> <a href = "/work"> Work </a> </li>
@@ -45,11 +45,12 @@ const NavBar = () => {
                 {/* Mobile Screen */}
                 {/* hamburger icon shows the drawer on click */}
 
-                {(screenWidth < 1000) && (
+                {(screenWidth < 800) && (
                     <div className = "mobile-menu">
                         <MenuIcon></MenuIcon>
                     </div>
                 )}
+
         </div>  
     );
 }

@@ -10,7 +10,6 @@ const App = () => {
           <NavBar/>
           <Routes>
             <Route path="/" element={<HomePage/>}></Route>
-            
           </Routes>
       </div>
     </Router>

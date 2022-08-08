@@ -1,13 +1,5 @@
 
     @import url(//fonts.googleapis.com/css?family=Open+Sans);
-    .container {
-        padding-top: 30px;
-        margin: 0 auto; 
-        padding: 10px;
-        margin-right: 2rem;
-        margin-left: 2rem;
-        font-family: 'Open Sans';
-    }
 
     .name-tag {
         text-decoration: none;
@@ -18,7 +10,6 @@
         font-size: 30px;
         font-weight: 540;
         float: left;
-        margin-left: 2rem;
     }
 
     nav ul {
@@ -26,8 +17,6 @@
         padding: 0;
         list-style: none;
         font-family: 'Open Sans';
-        max-width: 100%;    
-        min-width: 1000px;
     }
 
     nav li {
@@ -45,7 +34,7 @@
     }
 
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 800px){
  
         .mobile-menu {
             float: right;
