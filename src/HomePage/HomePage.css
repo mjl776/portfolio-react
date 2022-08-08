@@ -1,0 +1,22 @@
+
+.intro-text {
+    padding-top: 150px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding-bottom: 200px;
+    min-width: 1000px;
+    max-width: 100%;    
+}
+
+.text-portion1 {
+    padding-left: 40%;
+    padding-right: 20%;
+    font-size: 50px;
+}
+
+.text-portion2 {
+    padding-left: 40%;
+    padding-right: 20%;
+    font-size: 38px;
+}
+
