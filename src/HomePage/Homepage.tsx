@@ -19,7 +19,7 @@ const HomePage = () => {
                     <div className = "images-container">
                         <Row align = "center">
                             <Col xs= {2.5} sm = {2.5} md ={2.5}>
-                                <a><img className ="images" src = {mail} alt = "github"></img></a>
+                                <a href = "mailto:mjl776@nyu.edu?subject = Connecting!&body = Message"><img className ="images" src = {mail} alt = "github"></img></a>
                             </Col>
                             <Col xs= {2.5} sm = {2.5} md ={2.5}>
                                 <a href = "https://www.linkedin.com/in/michael-lee-4955699b/">
