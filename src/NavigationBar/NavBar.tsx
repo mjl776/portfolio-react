@@ -2,6 +2,7 @@ import React, {useState, useEffect, } from 'react'
 import "./NavBar.css"
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -35,9 +36,16 @@ const NavBar = () => {
                 {(screenWidth > 800) && (
                     <nav>
                         <ul>
-                            <li> <a href = "/work"> Work </a> </li>
-                            <li> <a href = "/about"> About </a> </li>
-                            <li> <a href = "/contact"> Contact </a> </li>
+                           <li> <NavLink to='/work' className={({ isActive }) =>
+                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
+                                    Work </NavLink> </li>
+                           <li><NavLink to='/about' className={({ isActive }) =>
+                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
+                                    About </NavLink> </li> 
+                            <li><NavLink to='/' className={({ isActive }) =>
+                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
+                                    Home 
+                            </NavLink> </li> 
                         </ul>
                     </nav>
                 )}
@@ -47,7 +55,7 @@ const NavBar = () => {
 
                 {(screenWidth < 800) && (
                     <div className = "mobile-menu">
-                        <MenuIcon></MenuIcon>
+                        <MenuIcon> </MenuIcon>
                     </div>
                 )}
 
