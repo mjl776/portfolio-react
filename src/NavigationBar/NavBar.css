@@ -37,6 +37,8 @@
     @media screen and (max-width: 800px){
  
         .mobile-menu {
+            margin: 0;
+            padding-top: 10px;
             float: right;
         }
 
