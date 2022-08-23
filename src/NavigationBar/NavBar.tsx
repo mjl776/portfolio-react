@@ -104,6 +104,7 @@ const NavBar = () => {
                                 <NavLink
                                     to= {item.href}
                                     className="mobile-nav-element"
+                                    onClick={() => setOpen(false)}
                                 >
                                     {item.name}
                                 </NavLink>
