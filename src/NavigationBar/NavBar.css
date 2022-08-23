@@ -42,4 +42,16 @@
             float: right;
         }
 
+        .mobile-nav-element {
+            text-decoration: none;
+            font-family: 'Open Sans';
+            color: rgb(0, 0, 0);   
+            font-size: 30px;   
+            font-weight: 530;  
+        }
+
+        .x-icon {
+            transform: scale(1.6);
+        }
+
     }
