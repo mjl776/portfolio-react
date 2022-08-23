@@ -74,9 +74,13 @@ const NavBar = () => {
                 {(screenWidth < 800) && (
                     <div>
                     <div className = "mobile-menu">
-                    <IconButton onClick={() => setOpen(true)}>
-                        <MenuIcon />
-                    </IconButton>
+                        <IconButton onClick={() => setOpen(true)}>
+                            <MenuIcon />
+                        </IconButton>
+                    </div>
+                    
+                    {/* Drawer Opened */}
+
                     <SwipeableDrawer 
                         anchor="top"
                         open={open}
@@ -84,19 +88,18 @@ const NavBar = () => {
                         onClose={() => setOpen(false)}
                     >
                     {/* Close button */}
-
+                
                     <div
                         onClick={() => setOpen(false)}
                         onKeyPress={() => setOpen(false)}
                         role="button"
                         tabIndex={0}
                     >
-                        <IconButton>
+                        <IconButton className = "x-position">
                             <ClearOutlinedIcon className = "x-icon"/>
                         </IconButton>
                     </div>
                     <Divider />
-
                     {/* List of Items in Dropdown */}
                     <List>
                         {navigationLinks.map((item) => (
@@ -104,6 +107,7 @@ const NavBar = () => {
                                 <NavLink
                                     to= {item.href}
                                     className="mobile-nav-element"
+                                    onClick={() => setOpen(false)}
                                 >
                                     {item.name}
                                 </NavLink>
@@ -111,8 +115,7 @@ const NavBar = () => {
                         ))}
                     </List>
                 </SwipeableDrawer>
-                    </div>
-                    </div>
+            </div>
                 )}
 
         </div>  
