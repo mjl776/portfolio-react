@@ -3,10 +3,27 @@ import "./NavBar.css"
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from 'react-router-dom';
+import { SwipeableDrawer } from '@mui/material';
+import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
+import Divider from "@material-ui/core/Divider";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import Link from "@material-ui/core/Link";
+
+
 
 const NavBar = () => {
 
+    // Screen width setter
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+    // Open State Setter
+    const [open, setOpen] = useState(false);
+    const navigationLinks = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Work", href: "/work" },
+    ];
 
     //Screen Width Listener
     useEffect(() => {
@@ -52,10 +69,49 @@ const NavBar = () => {
 
                 {/* Mobile Screen */}
                 {/* hamburger icon shows the drawer on click */}
+                
 
                 {(screenWidth < 800) && (
+                    <div>
                     <div className = "mobile-menu">
-                        <MenuIcon> </MenuIcon>
+                    <IconButton onClick={() => setOpen(true)}>
+                        <MenuIcon />
+                    </IconButton>
+                    <SwipeableDrawer 
+                        anchor="top"
+                        open={open}
+                        onOpen={() => setOpen(true)}
+                        onClose={() => setOpen(false)}
+                    >
+                    {/* Close button */}
+
+                    <div
+                        onClick={() => setOpen(false)}
+                        onKeyPress={() => setOpen(false)}
+                        role="button"
+                        tabIndex={0}
+                    >
+                        <IconButton>
+                            <ClearOutlinedIcon className = "x-icon"/>
+                        </IconButton>
+                    </div>
+                    <Divider />
+
+                    {/* List of Items in Dropdown */}
+                    <List>
+                        {navigationLinks.map((item) => (
+                            <ListItem key={item.name}>
+                                <NavLink
+                                    to= {item.href}
+                                    className="mobile-nav-element"
+                                >
+                                    {item.name}
+                                </NavLink>
+                            </ListItem>
+                        ))}
+                    </List>
+                </SwipeableDrawer>
+                    </div>
                     </div>
                 )}
 
