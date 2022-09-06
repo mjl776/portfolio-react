@@ -13,7 +13,7 @@ const HomePage = () => {
             <div className = "intro-text">
                 <div className = "subtext">
                     Hi! <br/>
-                    I'm Michael a<br />
+                    I'm Michael, a<br />
                     UX designer based<br />
                     in New York<br />
                     <div className = "images-container">

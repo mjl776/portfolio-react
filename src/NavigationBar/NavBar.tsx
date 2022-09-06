@@ -5,12 +5,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from 'react-router-dom';
 import { SwipeableDrawer } from '@mui/material';
 import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
-import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Link from "@material-ui/core/Link";
+import { withStyles } from "@material-ui/core/styles";
 
-
+const MenuItem = withStyles({
+    root: {
+      justifyContent: "flex-end"
+    }
+})(ListItem);
 
 const NavBar = () => {
 
@@ -19,11 +22,6 @@ const NavBar = () => {
 
     // Open State Setter
     const [open, setOpen] = useState(false);
-    const navigationLinks = [
-        { name: "Home", href: "/" },
-        { name: "About", href: "/about" },
-        { name: "Work", href: "/work" },
-    ];
 
     //Screen Width Listener
     useEffect(() => {
@@ -40,53 +38,51 @@ const NavBar = () => {
 
     }, [])
 
-    return (
-        <div className = "container">
-                <div className = "nav-name"> 
-                    <a className = "name-tag" href = "/">
-                        Michael James Lee
-                    </a>
-                </div>
+    const navigationLinks = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Work", href: "/work" },
+    ];
     
-                {/* Desktop Screen */}
 
+    return (
+
+        <div className = "container">
+
+
+            <header>
+            
+            {/* Desktop Screen */}
+
+                <nav className = "navbar">
+                    <a href = "/" className = "nav-branding"> Michael Lee </a>
                 {(screenWidth > 800) && (
-                    <nav>
-                        <ul>
-                           <li> <NavLink to='/work' className={({ isActive }) =>
-                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
-                                    Work </NavLink> </li>
-                           <li><NavLink to='/about' className={({ isActive }) =>
-                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
-                                    About </NavLink> </li> 
-                            <li><NavLink to='/' className={({ isActive }) =>
-                                    isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin' }> 
-                                    Home 
-                            </NavLink> </li> 
-                        </ul>
-                    </nav>
-                )}
 
-                {/* Mobile Screen */}
-                {/* hamburger icon shows the drawer on click */}
-                
+                    <ul className = "nav-menu">
+                        <li className = "nav-item"> 
+                            <a href= "/" className = "nav-link"> Home </a>
+                        </li>
+                        <li className = "nav-item"> 
+                            <a href= "/about" className = "nav-link"> About </a>
+                        </li>
+                        <li className = "nav-item"> 
+                            <a href= "/work" className = "nav-link"> Work </a>
+                        </li>
+                    </ul>
+                )}
 
                 {(screenWidth < 800) && (
                     <div>
-                    <div className = "mobile-menu">
                         <IconButton onClick={() => setOpen(true)}>
-                            <MenuIcon />
+                            <MenuIcon className = "menu-icon">
+                            </MenuIcon>
                         </IconButton>
-                    </div>
-                    
-                    {/* Drawer Opened */}
-
-                    <SwipeableDrawer 
+                        <SwipeableDrawer 
                         anchor="top"
                         open={open}
                         onOpen={() => setOpen(true)}
                         onClose={() => setOpen(false)}
-                    >
+                     >
                     {/* Close button */}
                 
                     <div
@@ -99,12 +95,13 @@ const NavBar = () => {
                             <ClearOutlinedIcon className = "x-icon"/>
                         </IconButton>
                     </div>
-                    <Divider />
+
                     {/* List of Items in Dropdown */}
+                    
                     <List>
                         {navigationLinks.map((item) => (
-                            <ListItem key={item.name}>
-                                <NavLink
+                            <ListItem key={item.name} style={{ justifyContent: "center"}}>
+                                <NavLink 
                                     to= {item.href}
                                     className="mobile-nav-element"
                                     onClick={() => setOpen(false)}
@@ -115,10 +112,13 @@ const NavBar = () => {
                         ))}
                     </List>
                 </SwipeableDrawer>
-            </div>
-                )}
+                </div>
+            
+                )}  
 
-        </div>  
+                </nav>
+            </header>
+        </div>
     );
 }
 

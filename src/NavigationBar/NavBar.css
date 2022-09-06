@@ -1,60 +1,75 @@
 
     @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
-    .name-tag {
-        text-decoration: none;
-        color: rgb(0, 0, 0);  
-    }
-
-    .nav-name {
-        font-size: 30px;
-        font-weight: 540;
-        float: left;
-    }
-
-    nav ul {
-        margin: 0;
+    .container {
         padding: 0;
-        list-style: none;
+        margin: 0;
+        box-sizing: border-box;
         font-family: 'Open Sans';
     }
 
-    nav li {
-        float: right;
+    li {
+        list-style: none;
     }
 
-    nav li a {
+    a{ 
         text-decoration: none;
-        color: rgb(0, 0, 0);        
-        display: inline-block;
-        font-style: normal;
-        margin-right: 2rem;
-        font-size: 20px;
-        font-weight: 530;
+        color: black;
     }
 
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        font-weight: 530;
+        font-size: 20px;
+    }
+
+    .nav-branding {
+        font-size: 2rem;
+        font-weight: 400;
+    }
 
     @media screen and (max-width: 800px){
- 
-        .mobile-menu {
-            margin: 0;
-            padding-top: 10px;
-            float: right;
+    
+        .menu-icon {
+            transform: scale(1.5);
         }
 
         .mobile-nav-element {
-            text-decoration: none;
-            font-family: 'Open Sans';
             color: rgb(0, 0, 0);   
             font-size: 30px;   
             font-weight: 530;  
         }
 
-        .x-icon {
-            transform: scale(1.7);
-        }
-        .x-position {
+        .x-position { 
             float: right;
+            padding-right: 40px;
+        }
+        
+        .x-icon {
+            transform: scale(1.8);
         }
 
+
     }
+
+
+
+
+
+
+
+
+
+
+
