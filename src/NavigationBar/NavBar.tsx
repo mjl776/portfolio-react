@@ -58,13 +58,28 @@ const NavBar = () => {
 
                     <ul className = "nav-menu">
                         <li className = "nav-item"> 
-                            <a href= "/" className = "nav-link"> Home </a>
+                              <NavLink 
+                                    to= "/"
+                                    className="nav-link"
+                              >
+                                Home 
+                             </NavLink>                       
                         </li>
                         <li className = "nav-item"> 
-                            <a href= "/about" className = "nav-link"> About </a>
+                            <NavLink 
+                                    to= "/about"
+                                    className="nav-link"
+                              >
+                                About 
+                             </NavLink>  
                         </li>
                         <li className = "nav-item"> 
-                            <a href= "/work" className = "nav-link"> Work </a>
+                             <NavLink 
+                                    to= "/work"
+                                    className="nav-link"
+                              >
+                                Work 
+                             </NavLink> 
                         </li>
                     </ul>
                 )}
