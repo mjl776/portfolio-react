@@ -40,9 +40,10 @@
     }
 
     @media screen and (max-width: 800px){
-    
+
         .menu-icon {
             transform: scale(1.5);
+            color: black;
         }
 
         .mobile-nav-element {
@@ -53,11 +54,11 @@
 
         .x-position { 
             float: right;
-            padding-right: 40px;
         }
         
         .x-icon {
-            transform: scale(1.8);
+            transform: scale(2.0);
+            color: black;
         }
 
 

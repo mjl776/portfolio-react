@@ -43,12 +43,10 @@ const NavBar = () => {
         { name: "About", href: "/about" },
         { name: "Work", href: "/work" },
     ];
-    
 
     return (
 
         <div className = "container">
-
 
             <header>
             
@@ -72,17 +70,17 @@ const NavBar = () => {
                 )}
 
                 {(screenWidth < 800) && (
-                    <div>
+                    <div className = "mobile-menu">
                         <IconButton onClick={() => setOpen(true)}>
                             <MenuIcon className = "menu-icon">
                             </MenuIcon>
                         </IconButton>
-                        <SwipeableDrawer 
-                        anchor="top"
-                        open={open}
-                        onOpen={() => setOpen(true)}
-                        onClose={() => setOpen(false)}
-                     >
+                <SwipeableDrawer 
+                    anchor="top"
+                    open={open}
+                    onOpen={() => setOpen(true)}
+                    onClose={() => setOpen(false)}
+                >
                     {/* Close button */}
                 
                     <div
@@ -98,9 +96,10 @@ const NavBar = () => {
 
                     {/* List of Items in Dropdown */}
                     
-                    <List>
+                    <List>   {/* Try to list all items at once */}
+
                         {navigationLinks.map((item) => (
-                            <ListItem key={item.name} style={{ justifyContent: "center"}}>
+                            <ListItem key={item.name} style={{ justifyContent: "center" }}>
                                 <NavLink 
                                     to= {item.href}
                                     className="mobile-nav-element"
