@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 console.log(`/${process.env.PUBLIC_URL}`);
 root.render(
   <React.StrictMode>
-    <Router basename={`/${process.env.PUBLIC_URL}`}>
+    <Router>
       <App />
     </Router>
   </React.StrictMode>
