@@ -1,0 +1,17 @@
+
+.about-container {
+    text-align: center;
+}
+
+
+.text-for-about {
+    padding-top: 15px;
+    text-align: left;
+    display: inline-block; 
+    font-size: 30px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
