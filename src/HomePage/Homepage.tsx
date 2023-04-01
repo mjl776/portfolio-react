@@ -14,8 +14,8 @@ const HomePage = () => {
                 <div className = "subtext">
                     Hi! <br/>
                     I'm Michael, a<br />
-                    UX designer based<br />
-                    in New York<br />
+                    Software Engineer <br />
+                    based in New York<br />
                     <div className = "images-container">
                         <Row align = "center">
                             <Col xs= {2.5} sm = {2.5} md ={2.5}>
