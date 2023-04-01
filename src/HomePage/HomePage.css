@@ -1,11 +1,16 @@
 
 
+/* https://matthewjamestaylor.com/responsive-font-size#:~:text=To%20make%20font%20size%20responsive%20in%20steps%2C%20set%20the%20base,relative%20to%20the%20screen%20width. 
+
+Article used for Responsive Font Size 
+
+*/
 
 .intro-text {
     padding-top: 150px;
     font-weight: 600;
     padding-bottom: 200px;
-    font-size: 40px;
+    font-size: calc(40px + 0.4vw);
     text-align: center;
     margin-left: 2rem;
 }
@@ -16,7 +21,7 @@
 }
 
 .hi {
-    font-size: 60px;
+    font-size: calc(60px + 0.4vw);
 }
 
 .images-container {
