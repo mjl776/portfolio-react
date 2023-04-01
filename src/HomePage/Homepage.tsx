@@ -5,7 +5,7 @@ import github from "../Images/github.png"
 import instagram from "../Images/instagram.png"
 import mail from "../Images/mail.png"
 import linkedin from "../Images/linkedin.png"
-
+import Work from '../Work/Work'
 
 const HomePage = () => {
     return (
@@ -37,6 +37,8 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <hr></hr>
+            <Work></Work>
         </div>
     );
 }
