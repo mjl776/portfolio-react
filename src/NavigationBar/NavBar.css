@@ -1,11 +1,10 @@
 
-    @import url(//fonts.googleapis.com/css?family=Open+Sans);
-
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     .container {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Open Sans';
+        font-family: 'Mukta';
     }
 
     li {
