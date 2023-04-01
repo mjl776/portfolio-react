@@ -1,10 +1,9 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
-
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 .app {
     padding-top: 30px;
     margin: 0 auto; 
     padding: 10px;
     margin-right: 1rem;
     margin-left: 1rem;
-    font-family: 'Open Sans';
+    font-family: 'Mukta';
 }
