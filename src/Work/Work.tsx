@@ -3,6 +3,8 @@ import './Work.css'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 import image from "../Images/ProjectPhotos/SierraProjectPhoto.png"
+import compiler from "../Images/ProjectPhotos/CompilerProjectPhoto.png"
+
 
 const Work = () => {
 
@@ -32,12 +34,12 @@ const Work = () => {
             {(screenWidth > 935) && (
                 <div className = "work-container">
                     <Row> 
-                        <Col xs={1} sm={1} md={1} lg={3} className = "col-project">
+                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
                             <img src={image} alt="Project Photo" className="project_photo">
                             </img>
                         </Col>
-                        <Col xs={1} sm={1} md={1} lg={3} className = "col-project">
-                            <img src={image} alt="Project Photo" className="project_photo">
+                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
+                            <img src={compiler} alt="Project Photo" className="project_photo">
                             </img>
                         </Col>
                     </Row>
@@ -53,7 +55,7 @@ const Work = () => {
                             </img>
                         </Col>
                         <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={image} alt="Project Photo" className="project_photo">
+                            <img src={compiler} alt="Project Photo" className="project_photo">
                             </img>
                         </Col>
                     </Row>
