@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 import image from "../Images/ProjectPhotos/SierraProjectPhoto.png"
 import compiler from "../Images/ProjectPhotos/CompilerProjectPhoto.png"
-
+import { NavLink } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 const Work = () => {
 
@@ -34,14 +35,29 @@ const Work = () => {
             {(screenWidth > 935) && (
                 <div className = "work-container">
                     <Row> 
-                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={image} alt="Project Photo" className="project_photo">
-                            </img>
-                        </Col>
-                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={compiler} alt="Project Photo" className="project_photo">
-                            </img>
-                        </Col>
+                            <li>
+                                <a
+                                    href = "https://compiler-3c49e.firebaseapp.com/"
+                                    className=""
+                                >
+                            <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
+                                <img src={compiler} alt="Project Photo" className="project_photo">
+                                </img>
+                            </Col>
+                                </a>
+                            </li>
+                        <li>
+                            <a
+                                href = "https://drive.google.com/file/d/13xcxM7FnKAhZVMZ8kqL15yM6A9p6raE7/view?usp=sharing"
+                                className=""
+                                download
+                            >
+                                <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
+                                        <img src={image} alt="Project Photo" className="project_photo">
+                                        </img>
+                                </Col>
+                            </a>
+                        </li>
                     </Row>
                 </div>
             )
@@ -51,11 +67,11 @@ const Work = () => {
                 <div className = "work-container">
                     <Row> 
                         <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={image} alt="Project Photo" className="project_photo">
+                            <img src={compiler} alt="Project Photo" className="project_photo">
                             </img>
                         </Col>
                         <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={compiler} alt="Project Photo" className="project_photo">
+                            <img src={image} alt="Project Photo" className="project_photo">
                             </img>
                         </Col>
                     </Row>
