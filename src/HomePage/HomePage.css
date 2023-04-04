@@ -9,7 +9,7 @@ Article used for Responsive Font Size
 .intro-text {
     padding-top: 150px;
     font-weight: 600;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     font-size: calc(40px + 0.4vw);
     text-align: center;
     margin-left: 2rem;
@@ -32,5 +32,6 @@ Article used for Responsive Font Size
     height: 50px;
     width: 50px;
 }
+
 
 
