@@ -42,8 +42,7 @@ const About = () => {
                     <div className = "text-for-about">
                         Hi, I’m Michael and I’m a computer science major at NYU. <br/>
                         My main expertise is in Software Engineering <br/>
-                        and I recently gained experience in UX Design <br/>
-                        through projects. 
+                        and I recently gained exposure to UX Design <br/>
                     </div>
                 </Col>
             </Row>
