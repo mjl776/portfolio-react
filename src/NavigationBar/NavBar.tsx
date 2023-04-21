@@ -42,6 +42,7 @@ const NavBar = () => {
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
         { name: "Work", href: "/work" },
+        { name: "Contact", href: "/contact" },
     ];
 
     return (
@@ -79,6 +80,14 @@ const NavBar = () => {
                                     className="nav-link"
                               >
                                 Work 
+                             </NavLink> 
+                        </li>
+                        <li className = "nav-item"> 
+                             <NavLink 
+                                    to= "/contact"
+                                    className="nav-link"
+                              >
+                                Contact 
                              </NavLink> 
                         </li>
                     </ul>
