@@ -4,7 +4,7 @@ import "./Sierra.css"
 
 const Sierra = () => {
     return (
-            <div className = "center">
+            <div className = "sierra-container">
                 <img src = { image } className = "sierra-image"></img>
             </div>
     );
