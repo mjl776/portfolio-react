@@ -6,6 +6,8 @@ import HomePage from './HomePage/Homepage';
 import Work from './Work/Work'
 import About from './About/About'
 import Contact from './Contact/Contact';
+import Compiler from "./Compiler/Compiler"
+import Sierra from "./Sierra/Sierra"
 const App = () => {
   return (
       <div className = "app">
@@ -15,6 +17,8 @@ const App = () => {
             <Route path="work" element={<Work/>}></Route>
             <Route path="about" element={<About/>}></Route>
             <Route path="contact" element={<Contact/>}></Route>
+            <Route path="compiler" element={<Compiler/>}></Route>
+            <Route path="sierra" element={<Sierra/>}></Route>
           </Routes>
       </div>
   );

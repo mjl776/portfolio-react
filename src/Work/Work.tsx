@@ -12,9 +12,6 @@ const Work = () => {
     // Screen width setter
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-    // Open State Setter
-    const [open, setOpen] = useState(false);
-
     //Screen Width Listener
     useEffect(() => {
 
@@ -35,28 +32,27 @@ const Work = () => {
             {(screenWidth > 935) && (
                 <div className = "work-container">
                     <Row> 
-                            <li>
-                                <a
-                                    href = "https://compiler-3c49e.firebaseapp.com/"
-                                    className=""
-                                >
+                        <li>   
+                            <NavLink
+                                to = "/compiler"
+                                className=""
+                            >
                             <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
                                 <img src={compiler} alt="Project Photo" className="project_photo">
                                 </img>
                             </Col>
-                                </a>
+                            </NavLink>
                             </li>
                         <li>
-                            <a
-                                href = "https://drive.google.com/file/d/13xcxM7FnKAhZVMZ8kqL15yM6A9p6raE7/view?usp=sharing"
+                            <NavLink
+                                to = "/sierra"
                                 className=""
-                                download
                             >
                                 <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
                                         <img src={image} alt="Project Photo" className="project_photo">
                                         </img>
                                 </Col>
-                            </a>
+                            </NavLink>
                         </li>
                     </Row>
                 </div>
@@ -66,14 +62,28 @@ const Work = () => {
             {(screenWidth < 935) && (
                 <div className = "work-container">
                     <Row> 
-                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={compiler} alt="Project Photo" className="project_photo">
-                            </img>
-                        </Col>
-                        <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
-                            <img src={image} alt="Project Photo" className="project_photo">
-                            </img>
-                        </Col>
+                        <li>   
+                            <NavLink
+                                to = "/compiler"
+                                className=""
+                            >
+                                <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
+                                    <img src={compiler} alt="Project Photo" className="project_photo">
+                                    </img>
+                                </Col>
+                            </NavLink>
+                        </li>
+                        <li>   
+                            <NavLink
+                                to = "/sierra"
+                                className=""
+                            >
+                            <Col xs={1} sm={1} md={1} lg={1} className = "col-project">
+                                <img src={image} alt="Project Photo" className="project_photo">
+                                </img>
+                            </Col>
+                            </NavLink>
+                       </li>
                     </Row>
                 </div>
             )

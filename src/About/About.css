@@ -11,7 +11,7 @@
     font-size: calc(15px + 0.4vw);
 }
 
-.row {
+.row-about {
     display: flex;
     justify-content: center;
 }
