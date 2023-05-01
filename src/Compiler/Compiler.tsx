@@ -15,8 +15,8 @@ const Compiler = () => {
                         <img src = { image } className = "compiler-image"></img>
                     </a>
                  </Col>
-                 <div className = "project-description">
                     <Col xs={1} sm={1} md={1} lg={1}>
+                        <div className = "project-description">
                             I built a frontend application called compiler 
                             with 3 other students in my Remote Projects class using React <br/>
                             Typescript for the frontend, Firebase authentication services for the backend, <br/>
@@ -24,8 +24,8 @@ const Compiler = () => {
                             The web application was designed to be a Minimum viable product <br/>
                             of what a computer science social media platform would look like. <br/>
                             Click the image to view the website and sign up to test its features!  <br/>
+                        </div>
                     </Col>
-                </div>
             </Row>
         </div>
     );
