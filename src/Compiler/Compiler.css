@@ -3,7 +3,8 @@
     text-align: center;
 }
 
-.row-compiler {
+.row-compiler.row {
+    display: grid;
     justify-content: center;
 }
 
@@ -11,5 +12,11 @@
     padding-top: 20px;
     padding: 30px;
     text-align: left;
-    font-size: calc(15px + 0.4vw);
+    font-size: calc(13px + 0.4vw);
+}
+
+.compiler-image {
+    max-width: 100%;
+    height: auto;
+    width: auto; /* ie8 */
 }

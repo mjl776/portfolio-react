@@ -54,7 +54,7 @@ const About = () => {
        {(screenWidth < 830) && (
 
         <div className = "about-container"> 
-        <Row>
+        <Row className = "row-about">
             <Col xs={1} sm={1} md={1} lg={2.5}>
                 <div className = "images-container">
                     <img src={image}/>

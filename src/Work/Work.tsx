@@ -31,7 +31,7 @@ const Work = () => {
         <div className="format">
             {(screenWidth > 935) && (
                 <div className = "work-container">
-                    <Row> 
+                    <Row className = "row-work"> 
                         <li>   
                             <NavLink
                                 to = "/compiler"

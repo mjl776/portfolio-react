@@ -14,7 +14,7 @@
     width: auto; /* ie8 */
 }
 
-.row {
+.row-work {
     display: flex;
     justify-content: center;
 }
@@ -25,8 +25,7 @@
 
 
 @media screen and (max-width: 935px){
-    .row {
+    .row-work {
         display: grid;
     }
-
 }

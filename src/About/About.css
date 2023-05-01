@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 830px){
-    .row {
+    .row-about {
         display: grid;
     }
 }
