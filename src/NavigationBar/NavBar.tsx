@@ -5,9 +5,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from 'react-router-dom';
 import { SwipeableDrawer } from '@mui/material';
 import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import { withStyles } from "@material-ui/core/styles";
+import List from '@mui/material/List';
+import ListItem from "@mui/material/ListItem";
+import { withStyles } from "@mui/styles";
 
 const MenuItem = withStyles({
     root: {
@@ -50,7 +50,7 @@ const NavBar = () => {
         <div className = "container">
 
             <header>
-            
+
             {/* Desktop Screen */}
 
                 <nav className = "navbar">
@@ -58,37 +58,37 @@ const NavBar = () => {
                 {(screenWidth > 800) && (
 
                     <ul className = "nav-menu">
-                        <li className = "nav-item"> 
-                              <NavLink 
+                        <li className = "nav-item">
+                              <NavLink
                                     to= "/"
                                     className="nav-link"
                               >
-                                Home 
-                             </NavLink>                       
+                                Home
+                             </NavLink>
                         </li>
-                        <li className = "nav-item"> 
-                            <NavLink 
+                        <li className = "nav-item">
+                            <NavLink
                                     to= "/about"
                                     className="nav-link"
                               >
-                                About 
-                             </NavLink>  
+                                About
+                             </NavLink>
                         </li>
-                        <li className = "nav-item"> 
-                             <NavLink 
+                        <li className = "nav-item">
+                             <NavLink
                                     to= "/work"
                                     className="nav-link"
                               >
-                                Work 
-                             </NavLink> 
+                                Work
+                             </NavLink>
                         </li>
-                        <li className = "nav-item"> 
-                             <NavLink 
+                        <li className = "nav-item">
+                             <NavLink
                                     to= "/contact"
                                     className="nav-link"
                               >
-                                Contact 
-                             </NavLink> 
+                                Contact
+                             </NavLink>
                         </li>
                     </ul>
                 )}
@@ -99,14 +99,14 @@ const NavBar = () => {
                             <MenuIcon className = "menu-icon">
                             </MenuIcon>
                         </IconButton>
-                <SwipeableDrawer 
+                <SwipeableDrawer
                     anchor="top"
                     open={open}
                     onOpen={() => setOpen(true)}
                     onClose={() => setOpen(false)}
                 >
                     {/* Close button */}
-                
+
                     <div
                         onClick={() => setOpen(false)}
                         onKeyPress={() => setOpen(false)}
@@ -119,12 +119,12 @@ const NavBar = () => {
                     </div>
 
                     {/* List of Items in Dropdown */}
-                    
+
                     <List>   {/* Try to list all items at once */}
 
                         {navigationLinks.map((item) => (
                             <ListItem key={item.name} style={{ justifyContent: "center" }}>
-                                <NavLink 
+                                <NavLink
                                     to= {item.href}
                                     className="mobile-nav-element"
                                     onClick={() => setOpen(false)}
@@ -136,8 +136,8 @@ const NavBar = () => {
                     </List>
                 </SwipeableDrawer>
                 </div>
-            
-                )}  
+
+                )}
 
                 </nav>
             </header>
